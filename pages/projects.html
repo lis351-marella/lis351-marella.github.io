@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="nav-links">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/about.html">About</a>
+            <a href="/pages/projects.html">Projects</a>
+            <a href="/pages/resume.html">Resume</a>
+            <a href="/pages/contact.html">Contact</a>
+        </span>
+    </nav>
+    <h1>Projects</h1>
+    <section class="carousel-section">
+        <div class="carousel">
+            <button class="carousel-btn-left" aria-label="Previous project"><span class="arrow-icon-left">‹</span></button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide">
+                        <div class="project-card">
+                            <img class="project-img" src="/images/Stock-Index-Predictor.png" alt="Stock Index Predictor Model">
+                            <div class="project-desc">
+                                <h3>Stock Index Predictor</h3>
+                                <p>This project focused on building a machine-learning model to predict the daily market shifts of the S&P 500 index using historical market data. By retrieving decades of financial data through the Yahoo Finance API, this model analyzed high, low, and volume indicators to determine whether the index will close higher or lower the following day. It incorporated rolling averages and trend-based features to capture both short-term and long-term market behaviors. A Random Forest Classifier was used to aggregate the averages and simulate real-world conditions like inflations and recessions. Through this approach, the model achieved around a 57% accuracy score to form a baseline in predictive insight into the market direction based on historical patterns. While this project was not intended for live trading, it highlights how data-driven analysis and machine learning can be applied to financial forecasting.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="project-card">
+                            <img class="project-img" src="/images/Internship.png" alt="OSPO Internship Pore-Flow Model Simulations">
+                            <div class="project-desc">
+                                <h3>OSPO Internship<br>Pore-Flow Model Simulations</h3>
+                                <h3></h3>
+                                <p>During my OSPO internship, I worked on a research project investigating how water moves through polymer membranes used in desalination, challenging a 60-year-old scientific theory. Traditionally, researchers believed that water dissolves into these non-porous materials and diffuses across, but new evidence suggested a pressure-driven pore-flow mechanism may better explain the process. To explore this, I developed and tested molecular simulation models comparing the classical solution-diffusion model with the newer pore-flow framework. Using tools like VMD and Ovito, I visualized molecular dynamics within PDMS membranes and analyzed how factors such as pressure, polymer flexibility, and structural changes influenced water transport. My simulations revealed pore-like channels forming within the membrane, providing strong evidence that these “non-porous” materials may actually facilitate flow through dynamic nanochannels. This work will contribute to a paradigm shift in how desalination membranes are understood and could guide the design of more efficient materials for future water purification technologies.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <div class="project-card">
+                            <img class="project-img" src="/images/StudyBridge.png" alt="StudyBridge Website">
+                            <div class="project-desc">
+                                <h3>StudyBridge Website</h3>
+                                <p>StudyBridge is a proposed centralized, UW–Madison–affiliated web platform designed to streamline the discovery and enrollment process for research studies across all disciplines. Currently, participant recruitment at UW–Madison is very fragmented. Clinical, non-clinical, and departmental studies each use separate systems, which creates inefficiencies for both researchers and volunteers. StudyBridge addresses this by providing a unified, public-facing directory where anyone in Madison can easily search, filter, and sign up to volunteer for studies in exchange for a cash reward. Built using Vite and React with a SQLite backend, the prototype supports integrated features like instant sign-up links, researcher dashboards, and compatibility with existing systems such as StudyFinder and SONA. The platform ensures accessibility, compliance with IRB policies, and mobile responsiveness to reach diverse audiences. By consolidating recruitment into a single, transparent portal, StudyBridge aligns with the Wisconsin Idea by fostering collaboration, expanding community engagement, and increasing participation in UW–Madison’s research mission.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn-right" aria-label="Next project"><span class="arrow-icon-right">›</span></button>
+        </div>
+        <p class="carousel-note">Tip: use left/right arrow keys or the buttons to navigate</p>
+    </section>
+    <h4 class="footer">
+        © 2025 by Arvind Marella. All Rights Reserved.
+    </h4>
+    <script src="/js/carousel.js"></script>
+</body>
